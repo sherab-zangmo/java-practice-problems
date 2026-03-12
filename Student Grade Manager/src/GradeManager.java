@@ -35,9 +35,15 @@ public class GradeManager {
 
     }
 
+    public int getStudentCount() {
+        return students.size();
+    }
 
+    public void showStudentDetails(int studentNumber){
+        int index = studentNumber - 1;
+        Student student = students.get(index);
 
-
-
+        student.displayStudentDetails();
+    }
 }
 
