@@ -11,7 +11,7 @@ public class Main {
         boolean running = true;
 
         while (running){
-            System.out.println("\n---Student grade Manager");
+            System.out.println("\n---Student Grade Manager---");
             System.out.println("1. Add Student");
             System.out.println("2. Show Students");
             System.out.println("3. Add Grade");
