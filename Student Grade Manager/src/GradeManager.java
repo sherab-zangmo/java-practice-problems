@@ -45,5 +45,23 @@ public class GradeManager {
 
         student.displayStudentDetails();
     }
+
+    public void topStudent(){
+        if(students.isEmpty()){
+            System.out.println("No Students Available");
+            return;
+
+        }
+        Student top = students.get(0);
+
+        for (Student s : students){
+            if(s.getAverage() > top.getAverage() ){
+                top = s;
+            }
+        }
+
+        System.out.println("Top Student: " + top.getName());
+        System.out.println("Average: " + top.getAverage());
+    }
 }
 

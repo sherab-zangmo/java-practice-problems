@@ -16,8 +16,9 @@ public class Main {
             System.out.println("2. Show Students");
             System.out.println("3. Add Grade");
             System.out.println("4. Show Student Details");
-            System.out.println("5. Exit");
-            System.out.println("Choose option: ");
+            System.out.println("5. Show Top Student");
+            System.out.println("6. Exit");
+            System.out.print("Choose option: ");
 
             int choice = scanner.nextInt();
             scanner.nextLine();
@@ -62,6 +63,10 @@ public class Main {
                     break;
 
                 case 5:
+                    manager.topStudent();
+                    break;
+
+                case 6:
                     System.out.println("Goodbye!");
                     running = false;
                     break;
