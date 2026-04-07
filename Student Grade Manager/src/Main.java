@@ -27,6 +27,10 @@ public class Main {
                 case 1:
                     System.out.print("Add student name: ");
                     String name = scanner.nextLine();
+                    if (name.matches("\\d+")) {
+                        System.out.println("Invalid name! Cannot be a number.");
+                        break;
+                    }
                     manager.addStudent(name);
                     break;
 
